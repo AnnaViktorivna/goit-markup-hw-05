@@ -596,10 +596,8 @@
             </div>
           </div>
 
-          <div class="modal-field">
-            <label for="user-comment" class="modal-label-textarea"
-              >Comment</label
-            >
+          <div class="modal-field-comment">
+            <label for="user-comment" class="modal-label">Comment</label>
             <textarea
               name="user-comment"
               id="user-comment"
@@ -608,21 +606,21 @@
             ></textarea>
           </div>
 
-          <div class="modal-field">
+          <div class="modal-field-check">
             <input
               type="checkbox"
-              name="privacy_police"
-              id="privacy_police"
+              name="user-privacy"
+              id="user-privacy"
               class="modal-check visually-hidden"
               value="true"
             />
-            <label for="privacy_police" class="checkbox-text"
+            <label for="user-privacy" class="checkbox-text"
               ><span class="check-text-box">
-                <svg class="check-text-icon" width="16" height="16">
+                <svg class="check-text-icon" width="10" height="10">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg> </span
               >I accept the terms and conditions of the &#160;
-              <a href=""> Privacy Policy</a></label
+              <a href="" class="link-privacy-policy"> Privacy Policy</a></label
             >
           </div>
           <button type="submit" class="modal-send-btn">Send</button>

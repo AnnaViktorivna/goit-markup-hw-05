@@ -546,6 +546,64 @@ ul {
 .footer-soc-link:focus {
   background-color: #31d0aa;
 }
+.footer-bottom:last-child {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 80px;
+  margin-right: 3px;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-input-form {
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--WHITE, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: transparent;
+  padding: 8px 16px;
+  background-color: #2e2f42;
+  color: #ffffff;
+}
+
+.footer-input-form::placeholder {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 0.04em;
+}
+.footer-form-btn {
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  background: var(--IRIS, #4d5ae5);
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+}
+.footer-form-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  gap: 24px;
+  background-color: transparent;
+  fill: #fff;
+}
 /**=====footer end=====*/
 
 /*  Modal-form*/
@@ -704,10 +762,10 @@ ul {
 
 .check-text-box {
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   flex-shrink: 0;
-  border-radius: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
   display: flex;
   align-items: center;
@@ -716,7 +774,7 @@ ul {
 }
 
 .modal-check:checked + .checkbox-text > .check-text-box {
-  border: none;
+  border: 2px solid #404bbf;
   background-color: #404bbf;
   fill: white;
 }
